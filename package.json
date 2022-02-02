@@ -1,0 +1,42 @@
+{
+  "name": "teeny-timer",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "prepublishOnly": "npm run lint:fix && npm run test && npm run build",
+    "lint:fix": "ts-standard --fix",
+    "lint": "ts-standard"
+  },
+  "author": {
+    "name": "Roman Pukhalskyi",
+    "email": "1991pr1991@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/protoukr/teeny-timer"
+  },
+  "homepage": "https://github.com/protoukr/teeny-timer",
+  "license": "MIT",
+  "description": "Convenient wrapper around setTimeout/clearTimeout functions",
+  "main": "bin/index.js",
+  "types": "bin/index.d.ts",
+  "keywords": [
+    "timer",
+    "setTimeout",
+    "clearTimeout",
+    "time",
+    "wrapper"
+  ],
+  "files": ["bin"],
+  "ts-standard": {
+    "ignore": ["bin"]
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "jest": "^27.4.7",
+    "ts-jest": "^27.1.3",
+    "ts-standard": "^11.0.0",
+    "typescript": "^4.5.5"
+  }
+}
