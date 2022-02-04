@@ -1,6 +1,6 @@
 {
   "name": "teeny-timer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "test": "jest",
     "build": "tsc",
@@ -28,9 +28,13 @@
     "time",
     "wrapper"
   ],
-  "files": ["bin"],
+  "files": [
+    "bin"
+  ],
   "ts-standard": {
-    "ignore": ["bin"]
+    "ignore": [
+      "bin"
+    ]
   },
   "devDependencies": {
     "@types/jest": "^27.4.0",
