@@ -1,7 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Timer = void 0;
-const assert = require("assert");
+function assert(evalRes, msg) {
+    if (!evalRes) {
+        throw new Error(msg);
+    }
+}
 class Timer {
     constructor(params = {}) {
         const { tickListener, completedListener, errorHandler, defIntervalMs, defRepeatCount = 1 } = params;

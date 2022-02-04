@@ -1,7 +1,10 @@
-import * as assert from 'assert'
+function assert (evalRes: boolean, msg: string): void {
+  if (!evalRes) {
+    throw new Error(msg)
+  }
+}
 
 type TimerListener = (timer: Timer) => void
-
 export class Timer {
   private timeoutID?: ReturnType<typeof setTimeout>
 
